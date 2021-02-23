@@ -1,41 +1,100 @@
 /* Fonts */
 
 @font-face {
-
-    font-family: "Raleway-Regular";
-    src: url(../fonts/Raleway-Regular.ttf);
+  font-family: "Raleway-Regular";
+  src: url(../fonts/Raleway-Regular.ttf);
 }
 @font-face {
-
-    font-family: "Raleway-medium";
-    src: url(../fonts/Raleway-Medium.ttf);
+  font-family: "Raleway-medium";
+  src: url(../fonts/Raleway-Medium.ttf);
 }
 @font-face {
-
-    font-family: "Raleway-bold";
-    src: url(../fonts/Raleway-ExtraBold.ttf);
+  font-family: "Raleway-bold";
+  src: url(../fonts/Raleway-ExtraBold.ttf);
 }
 @font-face {
+  font-family: "Raleway-semibold";
+  src: url(../fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Raleway-black";
+  src: url(../fonts/Raleway-Black.ttf);
+}
 
+:root {
+  --primary: #eebf00;
+  --secondory: #232b38;
+  --ternary: #6c6c6c;
+  --danger: #fe4545;
+  --pure: #fefefe;
+  --light: #f0f0f0;
+  --heaven: #ffffff;
+  --footer: #2d333f;
+}
+
+/* Rest */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    --webkit-font-smoothing:antialiAsed;
+}
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1152px;
+  }
+}
+header.topbar{
+    background-color: var(--secondory);
+    color: var(--pure);
     font-family: "Raleway-semibold";
-    src: url(../fonts/Raleway-SemiBold.ttf);
+    padding: 0.75rem 0;
 }
-@font-face {
-
-    font-family: "Raleway-black";
-    src: url(../fonts/Raleway-Black.ttf);
+header.topbar .icons a{
+    margin: 0.6rem;
 }
-
-:root{
-    --primary:#EEBF00;
-    --secondory:#232B38;
-    --ternary:#6C6C6C;
-    --danger:#FE4545;
-    --pure:#FEFEFE;
-    --light:#F0F0F0;
-    --heaven:#FFFFFF;
-    --footer:#2D333F;
-
-
-
+header.topbar .auth .divider{
+    padding:0 1rem;
+}
+header.topbar .auth > div img{
+    margin-right: 0.35rem;
+}
+header.topbar .auth > div a{
+    color: var(--pure);
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.item-center{
+    align-items: center;
 }
