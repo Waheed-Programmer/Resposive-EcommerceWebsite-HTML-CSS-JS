@@ -98,3 +98,56 @@ header.topbar .auth > div a{
 .item-center{
     align-items: center;
 }
+nav .top {
+    padding: 1.5rem 0;
+}
+nav .top .contact h5, nav .top .time h5{
+    font-family: "Raleway-black";
+    margin-bottom: 0.25rem;
+}
+nav .top .contact h6, nav .top .time h6{
+    font-family: "Raleway-medium";
+   letter-spacing: 0.055rem;
+   font-size: 0.75rem;
+   columns: var(--ternary);
+}
+nav .top .contact img, nav .top .time img{
+margin-right: 1rem;
+}
+
+.justify-center{
+    justify-content: center;
+}
+nav .navbar a{
+    text-decoration: none;
+    color: var(--secondory);
+    font-family: "Raleway-semibold";
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease;
+}
+nav .navbar a.active{
+    background: var(--primary);
+    color: var(--pure);
+}
+nav .navbar a:hover{
+    background: var(--primary);
+    color: var(--pure);
+}
+.magic-shadow{
+    position: relative;
+    background: var(--heaven);
+}
+.magic-shadow::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url(../icons/shadow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -22px;
+    z-index: -1;
+
+}
