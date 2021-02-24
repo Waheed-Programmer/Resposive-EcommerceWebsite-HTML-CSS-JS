@@ -21,6 +21,10 @@
   src: url(../fonts/Raleway-Black.ttf);
 }
 
+@font-face {
+    font-family: "Raleway-extrabold";
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+  }
 :root {
   --primary: #eebf00;
   --secondory: #232b38;
@@ -152,4 +156,72 @@ nav .navbar a:hover {
   position: absolute;
   bottom: -22px;
   z-index: -1;
+}
+header.hero{
+    height: 415px;
+    background-image: url(../images/hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+header.hero .container{
+    position: relative;
+}
+header.hero .welcome {
+    margin-bottom: 0.25rem;
+}
+header.hero .welcome span{
+    font-family: "Raleway-bold";
+    columns: var(--secondory);
+    margin-right: 0.75rem;
+}
+header.hero h1{
+    font-family: "Raleway-extrabold";
+    color: var(--secondory);
+    font-size: 2.5rem;
+    margin-bottom: 0.25rem;
+}
+header.hero h1 span{
+    color: var(--primary);
+}
+header.hero p{
+    font-family: "Raleway-medium";
+    width: 50%;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+.btn{
+    padding: 0.75rem 0.75rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    line-height: 0.8;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--heaven);
+}
+.btn-primary:hover{
+    background-color: var(--heaven);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+.btn-secondary{
+    background-color: var(--secondory);
+    color: var(--heaven);
+}
+.btn-secondary:hover{
+    background-color: var(--heaven);
+    color: var(--secondory);
+    border: 1px solid var(--secondory);
+}
+header.hero button:first-child{
+    margin-right: 0.50rem;
+}
+header.hero .hero-image{
+    position: absolute;
+    top: -40px;
+    right: 40px;
 }
