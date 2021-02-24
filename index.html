@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
     <title>Food Store</title>
   </head>
@@ -71,7 +77,6 @@
         </div>
       </div>
     </nav>
-
     <header class="hero flex item-center">
       <div class="container">
         <div class="welcome flex item-center">
@@ -89,9 +94,146 @@
           <button class="btn btn-secondary">Shop Now</button>
         </div>
         <div class="hero-image">
-            <img src="./images/straw.png" alt="">
+          <img src="./images/straw.png" alt="" />
         </div>
       </div>
     </header>
+    <section class="top-products">
+      <div class="container">
+        <h1 class="section-heading">Top Products</h1>
+        <div class="slider">
+          <button class="slider-btn prev-btn">
+            <img src="./icons/pre.svg" alt="" />
+          </button>
+          <button class="slider-btn next-btn">
+            <img src="./icons/next.svg" alt="" />
+          </button>
+
+          <div class="food-slider">
+            <div class="food-card magic-shadow-sm">
+              <div class="product-image flex justify-center item-center">
+                <img src="./images/plate-1.png" alt="" />
+              </div>
+              <hr />
+              <div><h2 class="text-center">Summer salad</h2></div>
+              <div class="star flex justify-center item-center">
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/star-grey.svg" alt="" />
+                <img src="./icons/star-grey.svg" alt="" />
+              </div>
+              <div class="price text-center">$ 1.25</div>
+              <div class="flex justify-center">
+                <button>
+                  <img src="./icons/cart-2.svg" alt="" />
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+            <div class="food-card magic-shadow-sm">
+              <div class="product-image flex justify-center item-center">
+                <img src="./images/plate-2.png" alt="" />
+              </div>
+              <hr />
+              <div><h2 class="text-center">Cottage Pie</h2></div>
+              <div class="star flex justify-center item-center">
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/star-grey.svg" alt="" />
+                <img src="./icons/star-grey.svg" alt="" />
+              </div>
+              <div class="price text-center">$ 1.25</div>
+              <div class="flex justify-center">
+                <button>
+                  <img src="./icons/cart-2.svg" alt="" />
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+            <div class="food-card magic-shadow-sm">
+              <div class="product-image flex justify-center item-center">
+                <img src="./images/plate-3.png" alt="" />
+              </div>
+              <hr />
+              <div><h2 class="text-center">Russian Salad</h2></div>
+              <div class="star flex justify-center item-center">
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/star-grey.svg" alt="" />
+                <img src="./icons/star-grey.svg" alt="" />
+              </div>
+              <div class="price text-center">$ 1.25</div>
+              <div class="flex justify-center">
+                <button>
+                  <img src="./icons/cart-2.svg" alt="" />
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+            <div class="food-card magic-shadow-sm">
+              <div class="product-image flex justify-center item-center">
+                <img src="./images/plate-2.png" alt="" />
+              </div>
+              <hr />
+              <div><h2 class="text-center">Amercian salad</h2></div>
+              <div class="star flex justify-center item-center">
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/star-grey.svg" alt="" />
+                <img src="./icons/star-grey.svg" alt="" />
+              </div>
+              <div class="price text-center">$ 1.25</div>
+              <div class="flex justify-center">
+                <button>
+                  <img src="./icons/cart-2.svg" alt="" />
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center btn-wrapper">
+          <button class="btn btn-secondary">View More</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-meal">
+        <div class="container">
+            <h1 class="section-heading">About Fresh Meal</h1>
+            <div class="about-meal-wrap flex">
+                <div class="flex-1">
+                    <img src="./images/yogurt.png" alt=""></div>
+                <div class="flex-1">
+                    <h2>Freshmeal is long established fact that a reader will be distructed</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda excepturi nihil, corporis quibusdam dignissimos deleniti. Possimus tempora aliquam at eius, numquam, commodi autem obcaecati quas, quasi exercitationem eos impedit mollitia!</p>
+            <button class="btn btn-secondary">Read More</button>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

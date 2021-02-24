@@ -43,7 +43,10 @@
   box-sizing: border-box;
 }
 body {
-  --webkit-font-smoothing: antialiAsed;
+  --webkit-font-smoothing: antialiased;
+  height: 4000px;
+  font-family: "Raleway-regular";
+
 }
 .container {
   width: 100%;
@@ -157,6 +160,26 @@ nav .navbar a:hover {
   bottom: -22px;
   z-index: -1;
 }
+
+.magic-shadow-sm {
+    position: relative;
+    background: var(--heaven);
+  }
+  .magic-shadow-sm::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url(../icons/shadow-sm.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -20px;
+    z-index: -1;
+  }
+  .slick-track{
+      padding: 1rem 0;
+  }
 header.hero{
     height: 415px;
     background-image: url(../images/hero.png);
@@ -224,4 +247,138 @@ header.hero .hero-image{
     position: absolute;
     top: -40px;
     right: 40px;
+}
+section{
+    padding: 4rem 0;
+}
+section.top-products{
+    background:var(--light);
+}
+.section-heading{
+    font-family: "Raleway-bold";
+    text-align: center;
+    position: relative;
+    margin-bottom: 6rem;
+}
+.section-heading::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 35px;
+    background-image: url(../icons/hr.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 40px;
+
+}
+section.top-products .food-slider .food-card{
+    background-color:var(--heaven);
+    padding: 1.5rem 0;
+    border-radius: 5px;
+}
+section.top-products .food-slider .food-card .product-image img{
+    width: 80%;
+    height: 200px;
+    object-fit: contain;
+    padding-bottom: 1rem 0;
+
+}
+hr{
+    border:1px solid var(--light);
+    opacity: 0.8;
+    margin:1rem 0;
+}
+section.top-products .food-slider .food-card h2{
+    font-family: "Raleway-bold";
+    font-size: 1.3rem;
+    margin-bottom: 0.25rem;
+}
+.text-center{
+text-align: center;
+
+}
+section.top-products .food-slider .food-card .star{
+    margin-bottom: 0.5rem;
+}
+section.top-products .food-slider .food-card .star img{
+    margin-right: 0.25rem;
+}
+section.top-products .food-slider .food-card .price{
+    font-family: "Raleway-medium";
+    color: var(--danger);
+    margin-bottom: 1rem;
+}
+section.top-products .food-slider .food-card button{
+    font-family: "Raleway-medium";
+    color: var(--secondory);
+    background:var(--heaven);
+    border:2px solid var(--primary);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+section.top-products .food-slider .food-card button:hover{
+    background:var(--primary);
+    color: var(--heaven);
+}
+.food-slider .food-card button img{
+    background:var(--primary);
+    padding: 0.50rem;
+    height: 32px;
+    margin-right: 1.2rem;
+}
+.slick-slide{
+    margin:0 27px;
+}
+.slick-list{
+    margin:0 -27px;
+}
+.top-products .slider-btn{
+    width: 30px;
+    height: 30px;
+    background: var(--primary);
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+.top-products .slider{
+    position: relative;
+}
+.prev-btn{
+    position: absolute;
+    top: 46%;
+    left: -3rem;
+    z-index: 1;
+}
+
+.next-btn{
+    position: absolute;
+    top: 46%;
+    right: -3rem;
+    z-index: 1;
+}
+.top-products .btn-wrapper{
+    margin-top: 2rem;
+}
+
+section.about-meal img{
+    width: 80%;
+}
+.flex-1{
+    flex: 1;
+}
+section.about-meal h2{
+    font-family: "Raleway-bold";
+    font-size: 1.4rem;
+    color: var(--secondory);
+    margin-bottom: 2rem;
+    line-height: 1,3;
+}
+section.about-meal p{
+    margin-bottom: 4rem;
+    line-height: 1.7;
 }
