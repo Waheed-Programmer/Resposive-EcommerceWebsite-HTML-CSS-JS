@@ -546,11 +546,248 @@ section.contact-us{
 section.contact-us .contact-info-wraper{
     padding: 4rem 0;
     flex: 1;
+}section.contact-us .map{
+    flex:1;
+    filter:grayscale(100%);
+    -webkit-filter:grayscale(100%);
 }
-section.contact-us map{
-    flex: 1;
+section.contact-us .infoo-contact{
+    display:flex;
+    flex-direction: column;
+  align-items: center;
+    
 }
-section.contact-us .contact-info {
-    display: flex;
+
+section.contact-us .infoo-contact > div > div > div{
+    display:flex;
+
+    align-items:center;
+    margin-bottom:2rem;
+    
+}
+section.contact-us .infoo-contact > div > div > div span:first-child{
+    font-family: "Raleway-bold";
+    margin-bottom:0.25rem;
+}
+
+footer{
+    background:var(--footer);
+    padding:4rem 0;
+}
+footer .container{
+    display:flex;
+    color:var(--pure);
+}
+
+footer .box{
+    flex:1;
+    margin-right:2rem;
+    text-align:center;
+}
+
+footer .instagram-api img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+footer .instagram-api .post-wrap{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+footer .instagram-api .post-wrap > div{
+    width: calc(1/3*100% - (1 - 1/3)*10px);
+    margin-bottom:10px;
+}
+footer .box ul{
+    list-style-type: none;
+}
+footer .box ul li a{
+    color:var(--pure);
+    text-decoration: none;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+footer .box ul li a:hover{
+    color:var(--primary);
+}
+footer .box h3{
+    border-bottom:1px solid var(--primary);
+    padding-bottom:1rem;
+    margin-bottom:1rem;
+}
+
+footer .box p{
+    line-height: 1.6;
+    margin-bottom:1rem;
+}
+footer .box ul li{
+    margin-bottom:1rem;
+}
+footer .box:nth-child(3) > div {
+    display:flex;
     justify-content: center;
+}
+footer .box:nth-child(3){
+    text-align: left;
+}
+footer .box:nth-child(3) h3{
+    text-align: center;
+}
+footer .box:nth-child(3) > div img{
+    margin-right:1rem;
+}
+footer .box:nth-child(3) ul li{
+    margin-bottom:1.5rem;
+}
+
+footer.copyright{
+    padding:1rem 0;
+    background: var(--secondary);
+    color:var(--pure);
+    text-align: center;
+    font-size: 0.75rem;
+}
+footer.copyright a{
+    color:var(--primary);
+    text-decoration: none;
+}
+
+.nav-background .mobile-logo{
+    padding:1rem;
+}
+.nav-background .mobile-nav{
+    padding:1rem;
+}
+.nav-background .mobile-nav ul{
+    list-style-type: none;
+}
+.nav-background .mobile-nav ul li{
+    margin-bottom:1rem;
+}
+.nav-background .mobile-nav ul li a{
+    text-decoration: none;
+    color:var(--secondary);
+    font-family: "Raleway-medium";
+}
+.nav-background .mobile-nav ul li a:hover{
+    color:var(--primary);
+}
+.nav-background .contact, .nav-background .time{
+    padding:1rem;
+    padding-left:0;
+}
+.nav-background .contact img, .nav-background .time img{
+    margin-right:1rem;
+}
+.nav-background .contact h5,.nav-background .time h5{
+    font-family:"Raleway-bold";
+    margin-bottom:0.25rem;
+    font-size:1rem;
+}
+.nav-background .contact h6, .nav-background .contact h6{
+    font-size: 0.75rem;
+}
+.nav-background .cart{
+    margin-bottom:2rem;
+}
+.nav-background .cart a{
+    color:var(--secondary);
+    text-decoration: none;
+    font-family: "Raleway-bold";
+}
+.nav-background .cart img{
+    margin-right:0.75rem;
+    width:20px;
+    height:20px;
+}
+
+@media (max-width:992px){
+    .nav-trigger{
+        display:block;
+    }
+    header.topbar, nav{
+        display:none;
+    }
+
+    header.hero {
+        margin-top:-4rem;
+    }
+    header.hero .hero-image{
+        right:-160px;
+        top:100px;
+    }
+    .top-products .slider-btn{
+        display:none!important;
+    }
+    .latest-news .article-wrapper{
+        flex-direction:column;
+    }
+    .latest-news .article-wrapper .card{
+        margin-right:0;
+        margin-bottom:4rem;
+    }
+
+    footer .instagram-api .post-wrap > div{
+        width:calc(1/2*100% - (1 - 1/3)*10px);
+    }
+}
+
+@media (max-width:768px){
+    .about-meal .about-meal-wrap{
+        flex-direction: column;
+    }
+    .about-meal .about-meal-wrap img{
+        width:100%;
+        margin-bottom: 2rem;
+    }
+
+    section.our-services .card-wrapper{
+        flex-direction:column;
+    }
+    section.our-services .card-wrapper .service-card{
+        margin-bottom:6rem;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .box{
+        text-align: left;
+        margin-right:0;
+        margin-bottom:3rem;
+    }
+    footer .box:nth-child(3) h3{
+        text-align:left;
+    }
+    footer .box:nth-child(3) > div{
+        display:block;
+    }
+}
+
+@media( max-width:576px){
+    header.hero .hero-image{
+        right:-235px;
+        top:150px;
+    }
+    header.hero .container{
+        padding-left:1rem;
+    }
+    header.hero{
+        margin-top:-3rem;
+    }
+    section.big-deal .timer > div{
+        margin-right:0.50rem;
+    }
+    section.big-deal .timer{
+        margin-right:-0.5rem;
+    }
+
+    section.subscribe .container{
+        flex-direction: column;
+        padding:0.50rem;
+    }
+   
 }
