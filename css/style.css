@@ -378,38 +378,179 @@ section.about-meal p {
   margin-bottom: 4rem;
   line-height: 1.7;
 }
-section.our-services{
-    background: var(--light);
-
+section.our-services {
+  background: var(--light);
 }
-section.our-services .card-wrapper{
-    margin-right: -2rem;
-    margin-top: 5rem;
+section.our-services .card-wrapper {
+  margin-right: -2rem;
+  margin-top: 5rem;
 }
-section.our-services .service-card{
-    background: var(--heaven);
-    padding: 2rem;
-    margin-right: 2rem;
-    padding-top: 4rem;
-    border-radius: 5px;
-    text-align: center;
-    position: relative;
+section.our-services .service-card {
+  background: var(--heaven);
+  padding: 2rem;
+  margin-right: 2rem;
+  padding-top: 4rem;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
 }
-section.our-services .service-card .icon{
-    position: absolute;
-    top:-45px;
-    left: 50%;
-    transform: translateX(-50%);
+section.our-services .service-card .icon {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-section.our-services .service-card h2{
-    font-family: "Raleway-bold";
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
+section.our-services .service-card h2 {
+  font-family: "Raleway-bold";
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
-section.our-services .service-card p{
-    line-height: 1.6;
-    margin-bottom: 1rem;
+section.our-services .service-card p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
-.text-primary{
-    color: var(--primary);
+.text-primary {
+  color: var(--primary);
+}
+section.big-deal .timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -2rem;
+  margin-bottom: 2rem;
+}
+section.big-deal .timer div {
+  display: flex;
+  justify-content: center;
+  background: var(--primary);
+  height: 150px;
+  width: 150px;
+  margin-right: 2rem;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+.text-pure {
+  color: var(--pure);
+}
+section.big-deal {
+  background: linear-gradient(rgba(35, 43, 56, 0.9), rgba(35, 43, 56, 0.9)),
+    url(../images/food-table.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+section.big-deal .timer div span:first-child {
+  font-size: 2.5rem;
+  color: var(--heaven);
+  font-family: Raleway-semibold;
+  margin-bottom: 0.05rem;
+}
+section.big-deal .timer div span:last-child {
+  color: var(--heaven);
+  font-family: Raleway-medium;
+}
+section.latest-news {
+  background: var(--light);
+  position: relative;
+  z-index: 0;
+}
+.latest-news .article-wrapper {
+  display: flex;
+  margin-right: -2rem;
+}
+.latest-news .article-wrapper .card .card-content {
+  padding: 2rem;
+}
+.latest-news .article-wrapper .card .card-content h2 {
+  font-family: "Raleway-bold";
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.latest-news .btn-wrapper {
+  margin-top: 2rem;
+}
+.latest-news .article-wrapper .card .card-content p {
+  line-height: 1.3rem;
+}
+.latest-news .article-wrapper .card .card-content .post-meta .comment-count {
+  margin-left: 1rem;
+}
+.latest-news .article-wrapper .card .card-content .post-meta {
+  margin-bottom: 1rem;
+}
+.latest-news .article-wrapper .card {
+  margin-right: 2rem;
+  background: var(--heaven);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.latest-news .article-wrapper .card img {
+  width: 100%;
+}
+section.subscribe {
+  background: var(--primary);
+}
+section.subscribe .container > div:first-child img {
+  width: 90%;
+}
+section.subscribe .container div:first-child {
+  flex: 1;
+}
+section.subscribe .container div:last-child {
+  flex: 1;
+}
+section.subscribe h1 {
+  font-family: "Raleway-bold";
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+section.subscribe p {
+  font-family: "Raleway-medium";
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+section.subscribe .input-wrap {
+  display: flex;
+  background: var(--heaven);
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+section.subscribe .input-wrap input {
+  border: none;
+  width: 100%;
+  padding: 0 1rem;
+  font-size: 1rem;
+  outline: none;
+}
+section.subscribe .input-wrap button {
+  padding: 0.8rem 2rem;
+  border: none;
+  background-color: var(--primary);
+  color: var(--pure);
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all .3s ease;
+  outline: none;
+}
+section.subscribe .input-wrap button:hover{
+    background: var(--secondory);
+}
+section.contact-us{
+    padding-bottom: 0;
+    padding-top: 0;
+}
+section.contact-us .contact-info-wraper{
+    padding: 4rem 0;
+    flex: 1;
+}
+section.contact-us map{
+    flex: 1;
+}
+section.contact-us .contact-info {
+    display: flex;
+    justify-content: center;
 }
